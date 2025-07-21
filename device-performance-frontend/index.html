@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>裝置資訊與性能比較</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>裝置資訊與性能比較</h1>
+<div id="device-info">
+<h2>您的裝置資訊</h2>
+<p><strong>瀏覽器:</strong> <span id="browser"></span></p>
+<p><strong>作業系統:</strong> <span id="os"></span></p>
+<p><strong>螢幕解析度:</strong> <span id="screen"></span></p>
+<p><strong>CPU 核心數:</strong> <span id="cpu"></span></p>
+<p><strong>記憶體:</strong> <span id="memory"></span></p>
+<p><strong>性能得分:</strong> <span id="performance"></span></p>
+</div>
+<button onclick="collectDeviceInfo()">取得裝置資訊</button>
+<button onclick="comparePerformance()">比較性能</button>
+<div id="comparison-result">
+<h2>性能比較結果</h2>
+<p id="result-text"></p>
+<canvas id="performanceChart" width="400" height="200"></canvas>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
